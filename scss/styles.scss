@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+// Primary Background color
+$cyan: hsl(179, 62%, 43%);
+$BrightYellow: hsl(71, 73%, 54%);
+// Neutral
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: $lightGray;
+}
+
+span { display: block; }
+
+.component {
+  max-width: 100%;
+  width: max-content;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px $lightGray;
+  
+  & > div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    // min-width: 375px;
+    width: max-content;
+    flex: 1;
+    gap: 30px;
+    font-size: 16px;
+    padding: 40px; 
+  }
+  
+  h2 { font-size: 20px; }
+  
+  
+  .text {
+    line-height: 1.5;
+    color: $grayishBlue;
+  }
+  
+  .intro {
+    width: 100%;
+    background: white;
+    h2 { color: $cyan;}
+    .offer { color: $BrightYellow; font-weight: bold;}
+  }
+  
+  .subscription {
+    color: white;
+    background: darkcyan;
+    
+    .text { color: white; font-size: 16px;}
+    .text > span:first-child { color: $lightGray; }
+    
+    span.price {
+      display: inline-block;
+      color: white; 
+      font-size: 30px;
+      font-weight: 700;
+    }
+    
+    button {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      outline: none;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+      background-color: $BrightYellow;
+    }
+  }
+  
+  .about {
+    color: white;
+    line-height: 1.5;
+    background: $cyan;
+  }
+}

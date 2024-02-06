@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: hsl(204, 43%, 93%);
+}
+
+span {
+  display: block;
+}
+
+.component {
+  max-width: 100%;
+  width: max-content;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px hsl(204, 43%, 93%);
+}
+.component > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.component .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  width: max-content;
+  flex: 1;
+  gap: 30px;
+  font-size: 16px;
+  padding: 40px;
+}
+.component h2 {
+  font-size: 20px;
+}
+.component .text {
+  line-height: 1.5;
+  color: hsl(218, 22%, 67%);
+}
+.component .intro {
+  width: 100%;
+  background: white;
+}
+.component .intro h2 {
+  color: hsl(179, 62%, 43%);
+}
+.component .intro .offer {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+}
+.component .subscription {
+  color: white;
+  background: darkcyan;
+}
+.component .subscription .text {
+  color: white;
+  font-size: 16px;
+}
+.component .subscription .text > span:first-child {
+  color: hsl(204, 43%, 93%);
+}
+.component .subscription span.price {
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.component .subscription button {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: hsl(71, 73%, 54%);
+}
+.component .about {
+  color: white;
+  line-height: 1.5;
+  background: hsl(179, 62%, 43%);
+}
+
+/*# sourceMappingURL=styles.css.map */
